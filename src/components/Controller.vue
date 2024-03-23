@@ -1,15 +1,19 @@
 <script setup>
+
+import Navbar from './Navbar.vue';
+import Landing from './Landing.vue';
+
 </script>
 
 <template>
     <div class="outer-container">
-        <div class="left-spacer"></div>
         <div class="inner-container">
-            <p>hello jdao abdajbd abkj k vj   jjjj j jjj jjj jjj jjj jj jjj jdao jjj
-                jjj jjj jjj jjjj jjjj jjj jjj jjj jjj j
-            </p>
+
+            <Navbar />
+            <Landing />
+
+
         </div>
-        <div class="right-spacer"></div>
     </div>
 
 
@@ -17,7 +21,6 @@
 <style scoped>
     .outer-container {
         min-width: 100vw;
-        min-height: 200vh;
         background-color: yellow;
         display: flex;
         flex-direction: row;
@@ -25,22 +28,12 @@
 
     }
 
-    .left-spacer {
-        display: flex;
-        min-width: auto;
-        background-color: aqua;
-        
-    }
-
-    .right-spacer {
-        display: flex;
-        min-width: fill;
-        background-color: red;
-    }
 
     .inner-container {
         display: flex;
-        max-width: 1080px;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 1080px;
         background-color: yellowgreen;
 
     }
