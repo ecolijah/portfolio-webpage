@@ -25,6 +25,7 @@ import Landing from './Landing.vue';
         display: flex;
         flex-direction: row;
         justify-content: center;
+        /* align-items: start; */
 
     }
 

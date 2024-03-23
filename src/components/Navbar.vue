@@ -18,6 +18,7 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+        background-color: aliceblue;
     }
 
 </style>
