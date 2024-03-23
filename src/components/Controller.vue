@@ -2,6 +2,9 @@
 
 import Navbar from './Navbar.vue';
 import Landing from './Landing.vue';
+import Projects from './Projects.vue';
+import Experience from './Experience.vue';
+import Studio from './Studio.vue'
 
 </script>
 
@@ -11,6 +14,9 @@ import Landing from './Landing.vue';
 
             <Navbar />
             <Landing />
+            <Projects />
+            <Experience />
+            <Studio />
 
 
         </div>
