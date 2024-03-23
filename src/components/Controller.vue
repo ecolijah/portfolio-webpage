@@ -5,6 +5,7 @@ import Landing from './Landing.vue';
 import Projects from './Projects.vue';
 import Experience from './Experience.vue';
 import Studio from './Studio.vue'
+import Contact from './Contact.vue';
 
 </script>
 
@@ -17,6 +18,7 @@ import Studio from './Studio.vue'
             <Projects />
             <Experience />
             <Studio />
+            <Contact />
 
 
         </div>
