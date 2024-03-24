@@ -1,8 +1,23 @@
 <script setup>
+defineProps({
+    title: String,
+    position: String,
+    date: String,
+    bullets: Array
+})
+
+// const items = bullets;
 </script>
 <template>
     <div class="project-cell">
-        <h1>boobs</h1>
+        <h2>{{ title }}</h2>
+        <div class="title">
+            <p>{{ position }}</p>
+            <p>{{ date }}</p>
+        </div>
+        <ul>
+            <li v-for="item in bullets">{{ item }}</li>
+        </ul>
     </div>
 
 </template>
@@ -10,8 +25,53 @@
 <style scoped>
     .project-cell {
         display: flex;
-        background-color: red;
-        width: 60%;
-        min-height: 240px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* background-color: red; */
+        width: 100%;
+        /* min-height: 240px; */
     }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        width: inherit;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: var(--small-text);
+        color: var(--title-color);
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h2 {
+        color: var(--title-color);
+        font-size: var(--mid-text);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* background-color: aliceblue; */
+        width: 90%;
+        list-style:circle;
+        padding-left: 20px;
+    }
+
+    li {
+        color: var(--text-color);
+        font-size: var(--small-text);
+        text-align: left;
+        width: 84%;
+        /* background-color: red; */
+        margin-bottom: 20px;
+
+    }
+
 </style>
