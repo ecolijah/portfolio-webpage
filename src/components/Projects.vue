@@ -2,6 +2,12 @@
 
 import ProjectCell from './ProjectCell.vue';
 
+//tech arrays
+const tArr1 = ["aws","typescript","react.js", "redis", "node.js","express.js"]
+
+//bullet arrays
+const bArr1 = ["studied and implemented a simplified version of Vercel’s deployment service, as well as a case study of the sytem architecture.","gained experience working with AWS in a realistic environment."]
+
 </script>
 <template>
     <div class="projects">
@@ -9,9 +15,7 @@ import ProjectCell from './ProjectCell.vue';
             <h1>projects</h1>
         </div>
         <div class="cells">
-            <ProjectCell />
-            <ProjectCell />
-            <ProjectCell />
+            <ProjectCell title="vercel clone" blurb="full-stack clone of vercel deployment service" :tech="tArr1" :bullets="bArr1" url="https://github.com/ecolijah/vercel-clone" imgpath="../assets/project-logos/vercel.png"/>
 
         </div>
     </div>

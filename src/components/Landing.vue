@@ -60,6 +60,8 @@
         object-fit: contain;
         max-height: 100%;
         border-radius: 6px;
+        -webkit-box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20); 
+        box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20);
     }
 
     h1 {
