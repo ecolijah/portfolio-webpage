@@ -7,8 +7,8 @@ const tArr1 = ["aws","typescript","react.js", "redis", "node.js","express.js"]
 const tArr2 = ["swift/swiftui","firebase","spotify-api"]
 const tArr3 = ["python", "pinecone", "tkinter", "openai-api"]
 //bullet arrays
-const bArr1 = ["studied and implemented a simplified version of Vercel’s deployment service, as well as a case study of the sytem architecture.","gained experience working with AWS in a realistic environment."]
-const bArr2 = ["developed ”krates”, an ios app designed to facilitate the discovery of new music whilst promoting the appreciation of albums ascomplete bodies of work.", "Like ’LetterBoxd’, but replace movies with albums. (users create lists of albums, by any criteria.)"]
+const bArr1 = ["studied and implemented a simplified version of Vercel’s deployment service, as well as a case study of the system architecture.","gained experience working with AWS in a realistic environment."]
+const bArr2 = ["developed ”krates”, an ios app designed to facilitate the discovery of new music whilst promoting the appreciation of albums as complete bodies of work.", "Like ’LetterBoxd’, but replace movies with albums. (users create lists of albums, by any criteria.)"]
 const bArr3 = ["developed ”beck”, an ai-powered personal assistant with configurable behavior, in order to cater to diverse user preferences.", "enabled long-term memory functionality through the integration of vector database/embeddings.", "devised a model that fuses recent dialogues with relevant past conversations, enhancing the ai’s contextual comprehension."]
 
 
