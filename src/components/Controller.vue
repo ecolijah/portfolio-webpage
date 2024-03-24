@@ -1,6 +1,5 @@
 <script setup>
 
-import Navbar from './Navbar.vue';
 import Landing from './Landing.vue';
 import Projects from './Projects.vue';
 import Experience from './Experience.vue';
@@ -13,7 +12,7 @@ import Contact from './Contact.vue';
     <div class="outer-container">
         <div class="inner-container">
 
-            <Navbar />
+            <!-- <Navbar /> -->
             <Landing />
             <Projects />
             <Experience />
@@ -27,6 +26,8 @@ import Contact from './Contact.vue';
 
 </template>
 <style scoped>
+
+
     .outer-container {
         min-width: 100vw;
         background-color: rgb(255, 255, 255);
