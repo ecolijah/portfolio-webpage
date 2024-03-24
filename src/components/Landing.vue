@@ -67,7 +67,7 @@ import { RouterView } from 'vue-router';
     }
 
     h1 {
-        font-size: var(--large-text);
+        font-size: var(--larger-text);
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;

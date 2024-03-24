@@ -69,12 +69,18 @@ onMounted(() => {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    background-color: aliceblue;
+    text-shadow: var(--text-shadow);
+    margin-top: 15px;
+    /* background-color: aliceblue; */
+    
+  }
+  .navbar a {
+    color: var(--title-color);
   }
 
   .outer-container {
     min-width: 100vw;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 253, 250);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,7 +94,7 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
     flex-basis: 1080px;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
 
 
   }
