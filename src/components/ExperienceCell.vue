@@ -40,6 +40,10 @@ defineProps({
         margin-bottom: 10px;
     }
 
+    .title p{
+        color: var(--text-color);
+    }
+
     p {
         font-size: var(--small-text);
         color: var(--title-color);
@@ -52,6 +56,7 @@ defineProps({
         font-size: var(--mid-text);
         font-weight: 700;
         margin: 0;
+        text-shadow: var(--text-shadow);
     }
 
     ul {

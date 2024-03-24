@@ -9,7 +9,7 @@
         </div>
         <div class="cells">
             <p>i also enjoy designing furniture and home goods.</p>
-            <p>if you're <a href="https://curious-design.vercel.app/" target="_blank">interested...</a></p>
+            <p>if you're <a href="https://curious-design.vercel.app/" target="_blank">curious...</a></p>
 
 
         </div>
