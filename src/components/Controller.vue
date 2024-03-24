@@ -29,7 +29,7 @@ import Contact from './Contact.vue';
 <style scoped>
     .outer-container {
         min-width: 100vw;
-        background-color: yellow;
+        background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -43,7 +43,8 @@ import Contact from './Contact.vue';
         flex-direction: column;
         align-items: center;
         flex-basis: 1080px;
-        background-color: yellowgreen;
+        background-color: rgb(255, 255, 255);
+
 
     }
 

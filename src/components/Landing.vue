@@ -52,24 +52,36 @@
         justify-content: flex-end;
         max-height: 70%;
 
+
     }
 
-    img {
+    .landing-image img {
         max-width: 100%;
         object-fit: contain;
         max-height: 100%;
+        border-radius: 6px;
     }
 
     h1 {
-        font-size: 7em;
+        font-size: var(--large-text);
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
+        color: var(--title-color);
+        text-shadow: var(--text-shadow);
+
     }
     h2{
-        font-size: 4em;
+        font-size: var(--medium-text);
         /* background-color:chartreuse ; */
         margin: 0;
-        font-weight: 400;;
+        font-weight: 400;
+        color: var(--title-color);
+        text-shadow: var(--text-shadow);
+
+    }
+    p {
+        font-size: var(--small-text);
+        color: var(--text-color);
     }
 </style>

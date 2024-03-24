@@ -9,7 +9,7 @@
         </div>
         <div class="cells">
             <p>i also enjoy designing furniture and home goods.</p>
-            <p>if you're <a href="https://curious-design.vercel.app/">interested...</a></p>
+            <p>if you're <a href="https://curious-design.vercel.app/" target="_blank">interested...</a></p>
 
 
         </div>
@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: rgb(135, 222, 142);
+        /* background-color: rgb(135, 222, 142); */
         height: 100vh;
         gap: 30%;
     }
@@ -38,10 +38,21 @@
     }
     
     h1 {
-        font-size: 7em;
+        font-size: var(--large-text);
+        color: var(--title-color);
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
+        text-shadow: var(--text-shadow);
+
+    }
+    p {
+        font-size: var(--mid-text);
+        color: var(--text-color);
+    }
+
+    a {
+        color: var(--accent-color);
     }
 
 </style>

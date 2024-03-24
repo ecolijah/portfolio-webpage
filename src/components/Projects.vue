@@ -22,7 +22,7 @@ import ProjectCell from './ProjectCell.vue';
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: burlywood;
+        /* background-color: burlywood; */
     }
     .title {
         display: flex;
@@ -40,11 +40,16 @@ import ProjectCell from './ProjectCell.vue';
 
     }
     
+
+        
     h1 {
-        font-size: 7em;
+        font-size: var(--large-text);
+        color: var(--title-color);
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
+        text-shadow: var(--text-shadow);
+
     }
 
 </style>

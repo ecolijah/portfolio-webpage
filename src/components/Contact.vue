@@ -6,12 +6,21 @@
         <!-- <input type="text" v-model="recipient" placeholder="Recipient"> -->
         <div class="forms">
           <h2>i'm actively looking for new opportunities! send me a message and I will get back with you.</h2>
+          <div class="group">
+            <p>what's your name?</p>
+            <input type="text" v-model="subject" placeholder="">
+          </div>
 
-          <p>what's your name?</p>
-          <input type="text" v-model="subject" placeholder="">
-          <p>what would you like to say to me?</p>
-          <textarea v-model="body" placeholder=""></textarea>
-          <a :href="mailToLink" target="_blank" ><p>submit</p></a>
+          <div class="group">
+            <p>what would you like to say to me?</p>
+            <textarea v-model="body" placeholder=""></textarea>
+
+          </div>
+          
+          <div>
+            <a :href="mailToLink" target="_blank" ><p>submit</p></a>
+          </div>
+         
         </div>
         
     </div>
@@ -54,18 +63,26 @@
 
     .forms {
       /* padding-left: 5%; */
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: space-around;
+      justify-content: space-between;
       background-color: aliceblue;
-      width: 100%%;
-      flex-basis: 80%;
+      width: 100%;
+      flex-basis: 70%;
+    }
+    .group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      background-color: yellowgreen;
     }
 
-    .forms textarea {
-      width: 90%;
-      height: 30%;
+    textarea {
+      /* width: 200%; */
+      /* height: 150%; */
     }
 
     h1 {
@@ -73,6 +90,8 @@
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
+        text-shadow: var(--text-shadow);
+
     }
     a {
       background-color: black;
@@ -82,6 +101,8 @@
     }
     .forms p {
       /* margin: 5px; */
+      margin: 0;
+      background-color: red;
     }
 
 

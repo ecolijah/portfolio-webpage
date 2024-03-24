@@ -45,6 +45,8 @@ import ExperienceCell from './ExperienceCell.vue';
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
+        text-shadow: var(--text-shadow);
+
     }
 
 </style>
