@@ -73,19 +73,21 @@ onMounted(() => {
     font-size: var(--smaller-text);
     position: fixed;
     bottom: 20px; /* Adjust as needed */
-    right: 15%; /* Adjust as needed */
-    color: var(--text-color);
+    right: 7.5%; /* Adjust as needed */
+    color: var(--title-color);
     z-index: 999; /* Ensure it's above other content */
     transition: opacity 0.5s ease;
     opacity: 0;
-    background-color: rgba(48, 140, 202, 0.138);
+    background-color: rgba(48, 140, 202, 0.323);
     border-radius: 3px;
     padding-right: 5px;
     padding-left: 5px;
+    -webkit-box-shadow: 5px 5px 15px 3px rgba(28, 110, 164, 0.195); 
+    box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20);
 }
 
 .back-to-top.show {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
   .section {
@@ -97,7 +99,7 @@ onMounted(() => {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    text-shadow: var(--text-shadow);
+    text-shadow: var(--small-text-shadow);
     margin-top: 15px;
     /* background-color: aliceblue; */
     
@@ -113,6 +115,8 @@ onMounted(() => {
     flex-direction: row;
     justify-content: center;
     /* align-items: start; */
+    /* transform: scale(0.8); */
+    /* transform-origin: top center; */
 
   }
 
@@ -121,7 +125,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 1080px;
+    flex-basis: 864px;
     /* background-color: rgb(255, 255, 255); */
 
 

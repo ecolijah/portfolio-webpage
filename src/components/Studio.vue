@@ -53,6 +53,7 @@
 
     a {
         color: var(--accent-color);
+        text-shadow: var(--small-text-shadow);
     }
 
 </style>

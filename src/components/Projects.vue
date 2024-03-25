@@ -7,8 +7,8 @@ const tArr1 = ["aws","typescript","react.js", "redis", "node.js","express.js"]
 const tArr2 = ["swift/swiftui","firebase","spotify-api"]
 const tArr3 = ["python", "pinecone", "tkinter", "openai-api"]
 //bullet arrays
-const bArr1 = ["studied and implemented a simplified version of Vercel’s deployment service, as well as a case study of the system architecture.","gained experience working with AWS in a realistic environment."]
-const bArr2 = ["developed ”krates”, an ios app designed to facilitate the discovery of new music whilst promoting the appreciation of albums as complete bodies of work.", "Like ’LetterBoxd’, but replace movies with albums. (users create lists of albums, by any criteria.)"]
+const bArr1 = ["studied and implemented a simplified version of vercel’s deployment service, as well as a case study of the system architecture.","gained experience working with aws in a realistic environment."]
+const bArr2 = ["developed ”krates”, an ios app designed to facilitate the discovery of new music whilst promoting the appreciation of albums as complete bodies of work.", "like ’letterboxd’, but replace movies with albums. (users create lists of albums, by any criteria.)"]
 const bArr3 = ["developed ”beck”, an ai-powered personal assistant with configurable behavior, in order to cater to diverse user preferences.", "enabled long-term memory functionality through the integration of vector database/embeddings.", "devised a model that fuses recent dialogues with relevant past conversations, enhancing the ai’s contextual comprehension."]
 
 
@@ -19,8 +19,8 @@ const bArr3 = ["developed ”beck”, an ai-powered personal assistant with conf
             <h1>projects</h1>
         </div>
         <div class="cells">
-            <ProjectCell title="vercel clone" blurb="full-stack clone of vercel deployment service." :tech="tArr1" :bullets="bArr1" url="https://github.com/ecolijah/vercel-clone" imgpath="../assets/project-logos/vercel.png"/>
-            <ProjectCell title="krates" blurb="music organization and discovery, with an emphasis on albums as a complete body of work." :tech="tArr2" :bullets="bArr2" url = "https://github.com/ecolijah/Krates" />
+            <ProjectCell title="vercel-esque service" blurb="simplified clone of vercel deployment service." :tech="tArr1" :bullets="bArr1" url="https://github.com/ecolijah/vercel-clone" imgpath="../assets/project-logos/vercel.png"/>
+            <ProjectCell title="krates - ios app" blurb="music organization and discovery, with an emphasis on albums as a complete body of work." :tech="tArr2" :bullets="bArr2" url = "https://github.com/ecolijah/Krates" />
             <ProjectCell title="beck" blurb="ai-powered personal assistant." :tech="tArr3" :bullets="bArr3" url = "https://github.com/ecolijah/Beck" />
         
         </div>
@@ -37,6 +37,7 @@ const bArr3 = ["developed ”beck”, an ai-powered personal assistant with conf
     .title {
         display: flex;
         justify-content: flex-end;
+        margin-bottom: 40px;
     }
 
     .cells {

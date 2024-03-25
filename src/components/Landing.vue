@@ -8,10 +8,9 @@
         <div class="landing-text">
             <h1>hello.</h1>
             <h2>my name is eli.</h2>
-            <p>While pursuing my  bachelors of computer science, with a minor in architecture, 
-                web  development became a rabbit hole I dove into head.</p>
-            <p>Since  then I have had freelance experience developing a web application, 
-                and  created full stack projects that serve a functional purpose in life.</p>
+            <p>i'm elijah lopez, a software developer, maker, 
+                and recent graduate from the university of houston. (computer science with an architecture minor)</p>
+            <p>occupying and pushing a frontier in any space is my aspiration, and learning is my number-one hobby.</p>
         </div>
 
         <div class="landing-image">
@@ -32,6 +31,7 @@
         height: 100vh;
         justify-content: space-between;
         /* padding: 10px; */
+        margin-bottom: 140px;
     }
 
     .landing-text {
@@ -48,7 +48,8 @@
     }
     .landing-image {
         display: flex;
-        flex-basis: 45%;
+        flex-basis: 38%;
+        /* width: auto; */
         /* background-color: red; */
         justify-content: flex-end;
         max-height: 70%;
@@ -86,5 +87,6 @@
     p {
         font-size: var(--small-text);
         color: var(--text-color);
+        /* text-shadow: var(--small-text-shadow); */
     }
 </style>

@@ -111,7 +111,7 @@
         /* margin: 0; */
         font-weight: 700;
         margin-bottom: 0;
-        text-shadow: var(--text-shadow);
+        text-shadow: var(--small-text-shadow);
 
     }
     a {

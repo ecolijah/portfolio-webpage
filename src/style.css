@@ -13,11 +13,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --small-text: 1.35rem;
-  --mid-text: 1.9rem;
-  --medium-text: 3.25rem;
-  --large-text:7.5rem;
-  --larger-text: 8.5rem;
+
+  --multiplier: 0.7; /* Adjust as needed */
+
+  --small-text: calc(1.35rem * var(--multiplier));
+  --mid-text: calc(1.9rem * var(--multiplier));
+  --medium-text: calc(3.25rem * var(--multiplier));
+  --large-text: calc(7.5rem * var(--multiplier));
+  --larger-text: calc(8.5rem * var(--multiplier));
 
   --tech-box: #D9D9D9;
   --text-color: #3A3A3A;
@@ -25,6 +28,7 @@
   --accent-color: #A1CF90;
 
   --text-shadow: 2px 2px 4px rgba(28,110,164,0.39);
+  --small-text-shadow: 1px 1px 3px rgba(28,110,164,0.39);
 }
 
 a {

@@ -2,8 +2,8 @@
 
 import ExperienceCell from './ExperienceCell.vue';
 const arr1 = ["certification for basic understanding and utilization of aws services."]
-const arr2 = ["geolocation and mapping: spearheaded the geolocation of over 8,000 steam traps and water devices using ArcGIS Pro, enhancing the operational efficiency of a major gulf coast refinery by streamlining maintenance workflows.", "operational improvements and cost savings: integrated comprehensive maps into the refinery’s GIS system, facilitating faster repairs and contributing to significant reductions in routine expenses and improved system reliability."]
-const arr3 = ["honed  problem-solving and communication skills through collaborative projects  and diverse programming languages, preparing for versatile roles in the  tech industry with a focus on continuous learning and growth."]
+const arr2 = ["geolocation and mapping: spearheaded the geolocation of over 8,000 steam traps and water devices using arcgis pro, enhancing the operational efficiency of a major gulf coast refinery by streamlining maintenance workflows.", "operational improvements and cost savings: integrated comprehensive maps into the refinery’s GIS system, facilitating faster repairs and contributing to significant reductions in routine expenses and improved system reliability."]
+const arr3 = ["honed problem-solving and communication skills through collaborative projects and numerous programming languages, preparing for versatile roles in the tech industry with a focus on continuous learning and growth."]
 const arr4 = ["studied design and history of architecture."]
 
 
@@ -15,8 +15,8 @@ const arr4 = ["studied design and history of architecture."]
             <h1>experience</h1>
         </div>
         <div class="cells">
-            <ExperienceCell title="aws clf-002 certification" position="certified cloud practicioner" date="march 2024" :bullets="arr1" />
-            <ExperienceCell title="engineering consultation firm (confidential)" position="GIS engineer" date="december 2022 - october 2023" :bullets="arr2" />
+            <!-- <ExperienceCell title="aws clf-002 certification" position="certified cloud practicioner" date="march 2024" :bullets="arr1" /> -->
+            <ExperienceCell title="engineering consultation firm (confidential)" position="gis engineer" date="december 2022 - october 2023" :bullets="arr2" />
             <ExperienceCell title="bachelors of computer science" position="university of houston" date="december 2023" :bullets="arr3" />
             <ExperienceCell title="minor in architecture" position="university of houston" date="december 2023" :bullets="arr4" />
             
