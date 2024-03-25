@@ -19,9 +19,9 @@ const bArr3 = ["developed ”beck”, an ai-powered personal assistant with conf
             <h1>projects</h1>
         </div>
         <div class="cells">
-            <ProjectCell title="vercel-esque service" blurb="simplified clone of vercel deployment service." :tech="tArr1" :bullets="bArr1" url="https://github.com/ecolijah/vercel-clone" imgpath="../assets/project-logos/vercel.png"/>
-            <ProjectCell title="krates - ios app" blurb="music organization and discovery, with an emphasis on albums as a complete body of work." :tech="tArr2" :bullets="bArr2" url = "https://github.com/ecolijah/Krates" />
-            <ProjectCell title="beck" blurb="ai-powered personal assistant." :tech="tArr3" :bullets="bArr3" url = "https://github.com/ecolijah/Beck" />
+            <ProjectCell title="vercel-esque service" blurb="simplified clone of vercel deployment service." :tech="tArr1" :bullets="bArr1" url="https://github.com/ecolijah/vercel-clone" imgpath="1" />
+            <ProjectCell title="krates - ios app" blurb="music organization and discovery, with an emphasis on albums as a complete body of work." :tech="tArr2" :bullets="bArr2" url = "https://github.com/ecolijah/Krates" imgpath="2"/>
+            <ProjectCell title="beck" blurb="ai-powered personal assistant." :tech="tArr3" :bullets="bArr3" url = "https://github.com/ecolijah/Beck" imgpath="3"/>
         
         </div>
     </div>

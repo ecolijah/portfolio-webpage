@@ -1,6 +1,6 @@
 <script setup>
-    import {ref} from 'vue';
-    defineProps({
+    import {ref, watchEffect} from 'vue';
+    const props = defineProps({
         title: String,
         blurb: String,
         imgpath: String,
@@ -8,6 +8,26 @@
         bullets: Array,
         url: String
     })
+
+    console.log(props)
+
+    var showVercel =  ref(false);
+    var showKrates =  ref(false);
+    var showBeck =  ref(false);
+
+        watchEffect(() => {
+        switch (props.imgpath) {
+            case "1":
+                showVercel.value = true;
+                break;
+            case "2":
+                showKrates.value = true;
+                break;
+            case "3":
+                showBeck.value = true;
+                break;
+            }
+        });
 
     var showReadMore =  ref(false);
 
@@ -21,7 +41,12 @@
 <template>
     <div class="project-cell">
         <div class="image-container">
-            <img :src="imgpath" alt="logo" />
+            <!-- <img :src="imagepath" alt="logo" /> -->
+            <img v-show="showVercel" src="../assets/project-logos/1.png" alt="logo" />
+            <img v-show="showKrates" src="../assets/project-logos/2.png" alt="logo" />
+            <img v-show="showBeck" src="../assets/project-logos/3.png" alt="logo" />
+
+
         </div>
         <div class="description-container">
             <h2>{{ title }}</h2>
@@ -133,6 +158,12 @@
     .image-container {
         width: 120px;
         /* background-color: gray; */
+    }
+    .image-container img {
+        width: 60%;
+        margin-top: 10px;
+        padding-right: 40px;
+
     }
 
     .description-container {

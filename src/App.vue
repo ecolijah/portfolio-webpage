@@ -52,6 +52,7 @@ onMounted(() => {
         <a href="#studio">studio</a>
         <a href="#contact">contact</a>
 
+
       </nav>
 
       <Landing id="home" class="section" />
@@ -95,9 +96,11 @@ onMounted(() => {
     transition: transform 0.8s ease-in-out; /* Smooth scroll animation */
   }
   .navbar {
+    position: absolute;
     display: flex;
     flex-direction: row;
     width: 100%;
+    /* flex-basis: 100%; */
     justify-content: space-between;
     text-shadow: var(--small-text-shadow);
     margin-top: 15px;
@@ -122,10 +125,12 @@ onMounted(() => {
 
 
   .inner-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-basis: 864px;
+    /* width: inherit; */
     /* background-color: rgb(255, 255, 255); */
 
 

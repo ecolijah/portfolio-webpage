@@ -11,50 +11,74 @@
             <p>i'm elijah lopez, a software developer, maker, 
                 and recent graduate from the university of houston. (computer science with an architecture minor)</p>
             <p>occupying and pushing a frontier in any space is my aspiration, and learning is my number-one hobby.</p>
+
+            <div class="links">
+                <!-- <a href="" target="_blank">instagram</a> -->
+                <a href="https://github.com/ecolijah" target="_blank"><img src="../assets/github-mark.png"/></a>
+                <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/" target="_blank"><img src="../assets/icons8-linkedin-50.png" /></a>
+            </div>
         </div>
 
         <div class="landing-image">
             <img src="../assets/aboutme-pic.png" alt="aboutmepic"/>
         </div>
 
+
     </div>
 </template>
 
 <style scoped>
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 30%;
+    }
+
+    .links a {
+        /* Apply color change to the <a> tag */
+    }
+
+    .links img:hover {
+        /* Change the color of the <a> tag on hover */
+        /* color: #79a166; */
+        width: 43px;
+    }
+
+    .links img {
+        margin-top: 20px;
+        width: 40px;
+        transition: width 0.3s ease-in-out;
+
+
+        /* color: white; */
+        /* Remove color property from here */
+    }
 
     .landing {
         display: flex;
         flex-direction: row;
         width: 100%;
         align-items: center;
-        /* background-color: rgb(195, 52, 107); */
         height: 100vh;
         justify-content: space-between;
-        /* padding: 10px; */
         margin-bottom: 140px;
     }
 
     .landing-text {
         display: flex;
         flex-direction: column;
-        /* justify-content: flex; */
         align-items: flex-start;
-        /* background-color: blanchedalmond; */
         text-align: left;
         flex-basis: 45%;
         max-height: 70%;
-        /* padding: 10px; */
-
     }
+
     .landing-image {
         display: flex;
         flex-basis: 38%;
-        /* width: auto; */
-        /* background-color: red; */
         justify-content: flex-end;
         max-height: 70%;
-
-
     }
 
     .landing-image img {
@@ -68,25 +92,22 @@
 
     h1 {
         font-size: var(--larger-text);
-        /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
         color: var(--title-color);
         text-shadow: var(--text-shadow);
-
     }
-    h2{
+
+    h2 {
         font-size: var(--medium-text);
-        /* background-color:chartreuse ; */
         margin: 0;
         font-weight: 400;
         color: var(--title-color);
         text-shadow: var(--text-shadow);
-
     }
+
     p {
         font-size: var(--small-text);
         color: var(--text-color);
-        /* text-shadow: var(--small-text-shadow); */
     }
 </style>
