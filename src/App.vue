@@ -5,7 +5,11 @@ import Projects from './components/Projects.vue';
 import Experience from './components/Experience.vue';
 import Studio from './components/Studio.vue'
 import Contact from './components/Contact.vue';
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
+
+// Reactive variable to track whether the user has scrolled past the landing page
+const scrolledPastLandingPage = ref(false);
+
 onMounted(() => {
     // Smooth scroll animation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -25,6 +29,11 @@ onMounted(() => {
                 target.classList.remove('scroll-animation');
             }, 500);
         });
+    });
+        // Listen for scroll events to determine if the user has scrolled past the landing page
+    window.addEventListener('scroll', () => {
+        const landingPageHeight = document.querySelector('#home').offsetHeight;
+        scrolledPastLandingPage.value = window.scrollY > landingPageHeight;
     });
 });
   
@@ -50,7 +59,7 @@ onMounted(() => {
       <Experience id="experience" class="section"/>
       <Studio id="studio" class="section"/>
       <Contact id="contact" class="section"/>
-
+      <a href="#home" class="back-to-top" :class="{ 'show': scrolledPastLandingPage }">back to top</a>
     </div>
   </div>
 
@@ -58,7 +67,26 @@ onMounted(() => {
 
 </template>
 
-<style scoped>
+<style scoped>  
+
+.back-to-top {
+    font-size: var(--smaller-text);
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 15%; /* Adjust as needed */
+    color: var(--text-color);
+    z-index: 999; /* Ensure it's above other content */
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    background-color: rgba(48, 140, 202, 0.138);
+    border-radius: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.back-to-top.show {
+    opacity: 0.7;
+}
 
   .section {
 

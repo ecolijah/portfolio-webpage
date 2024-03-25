@@ -32,7 +32,7 @@
             </ul>
             </div>
 
-            <ul v-show="showReadMore" class="bullets">
+            <ul class="bullets" :class="{ 'show': showReadMore }">
                 <li v-for="item in bullets">{{ item }}</li>
             </ul>
             <div class="links">
@@ -48,6 +48,16 @@
 </template>
 
 <style scoped>
+
+    .bullets {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .bullets.show {
+        max-height: 1000px; /* Adjust this value to fit your content */
+    }
     
     .links p {
         margin: 0;

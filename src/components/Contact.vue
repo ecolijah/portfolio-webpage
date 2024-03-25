@@ -18,7 +18,12 @@
           </div>
           
           <div>
-            <a :href="mailToLink" target="_blank" ><p>submit</p></a>
+            <a :href="mailToLink" target="_blank" >
+              <div class="submit">
+                <h3>submit</h3>
+              </div>
+              
+            </a>
           </div>
          
         </div>
@@ -48,15 +53,20 @@
   
   <style scoped>
 
+  input  {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
     .contact {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100vh;
         align-items: flex-start;
-        background-color: burlywood;
+        /* background-color: blueviolet; */
     }
-      .title {
+    .title {
         display: flex;
         justify-content: flex-start;
     }
@@ -68,41 +78,69 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-      background-color: aliceblue;
+      /* background-color: aliceblue; */
       width: 100%;
-      flex-basis: 70%;
+      flex-basis: 60%;
     }
     .group {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
 
-      background-color: yellowgreen;
+      /* background-color: yellowgreen; */
     }
 
     textarea {
-      /* width: 200%; */
-      /* height: 150%; */
+      width: 600px;
+      height: 150px;
     }
 
     h1 {
-        font-size: 7em;
+        font-size: var(--large-text);
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
         text-shadow: var(--text-shadow);
 
     }
+
+    h2 {
+
+      font-size: var(--small-text);
+        /* background-color: aliceblue; */
+        /* margin: 0; */
+        font-weight: 700;
+        margin-bottom: 0;
+        text-shadow: var(--text-shadow);
+
+    }
     a {
-      background-color: black;
+      /* background-color: black; */
       /* margin: 5px; */
       width: 80px;
+      /* color: blue; */
       /* height: 40px; */
     }
+
+    .submit h3 {
+      font-size: var(--small-text);
+      font-weight: 400;
+      color: white;
+      background-color: black;
+      border: none;
+      padding: 5px;
+      border-radius: 3px;
+      -webkit-box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20); 
+        box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20);
+    }
+
     .forms p {
       /* margin: 5px; */
+      font-size: var(--small-text);
+      color: var(--text-color);
+      font-weight: 400;
       margin: 0;
-      background-color: red;
+      /* background-color: red; */
     }
 
 
