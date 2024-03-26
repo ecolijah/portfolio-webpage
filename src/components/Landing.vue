@@ -8,7 +8,7 @@
         <div class="landing-text">
             <h1>hello.</h1>
             <h2>my name is eli.</h2>
-            <p>i'm elijah lopez, a software developer, maker, 
+            <p>i'm a software developer, maker, 
                 and recent graduate from the university of houston. (computer science with an architecture minor)</p>
             <p>occupying and pushing a frontier in any space is my aspiration, and learning is my number-one hobby.</p>
 
