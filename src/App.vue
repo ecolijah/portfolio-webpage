@@ -113,6 +113,8 @@ onMounted(() => {
   }
   .navbar a {
     color: var(--title-color);
+    text-decoration: none;
+
   }
 
   .outer-container {
