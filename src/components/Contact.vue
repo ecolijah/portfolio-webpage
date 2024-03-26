@@ -29,6 +29,7 @@
         </div>
         
     </div>
+    
   </template>
   
   <script>
@@ -135,6 +136,9 @@
       /* background-color: black; */
       /* margin: 5px; */
       width: 80px;
+      text-decoration: none;
+
+      
       /* color: blue; */
       /* height: 40px; */
     }
@@ -147,6 +151,7 @@
       border: none;
       padding: 5px;
       border-radius: 3px;
+      text-decoration: none;
       -webkit-box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20); 
         box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20);
     }

@@ -55,12 +55,15 @@ onMounted(() => {
 
       </nav>
 
+      <a href="#home" class="back-to-top" :class="{ 'show': scrolledPastLandingPage }"><p>back to top</p></a>
+
       <Landing id="home" class="section" />
       <Projects id="projects" class="section"/>
       <Experience id="experience" class="section"/>
       <Studio id="studio" class="section"/>
       <Contact id="contact" class="section"/>
-      <a href="#home" class="back-to-top" :class="{ 'show': scrolledPastLandingPage }">back to top</a>
+      
+      
       
     </div>
   </div>
@@ -91,8 +94,13 @@ onMounted(() => {
     box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20);
 }
 
+.back-to-top p {
+  margin: 0;
+}
+
 .back-to-top.show {
     opacity: 0.5;
+    text-decoration: none;
 }
 
   .section {
@@ -114,6 +122,7 @@ onMounted(() => {
   .navbar a {
     color: var(--title-color);
     text-decoration: none;
+
 
   }
 

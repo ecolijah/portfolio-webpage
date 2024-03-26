@@ -86,6 +86,7 @@ h1 {
 
   #home.landing.section {
     /* background-color: red; */
+    height: auto;
     flex-direction: column-reverse;
   }
 

@@ -87,7 +87,7 @@ defineProps({
         /* background-color: aliceblue; */
         width: 90%;
         list-style:circle;
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
 
     li {
