@@ -17,6 +17,15 @@
 
 </template>
 <style scoped>
+@media only screen and (max-width: 800px) {
+    .title h1 {
+        margin-right: 20px;
+    }
+
+    p {
+        padding: 10px;
+    }
+}
     .studio {
         display: flex;
         flex-direction: column;

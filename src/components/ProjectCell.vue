@@ -53,8 +53,8 @@
             <h3>{{ blurb }}</h3>
             <div class="tech-container">
                 <ul class="tech">
-                <li v-for="item in tech">{{ item }}</li>
-            </ul>
+                    <li v-for="item in tech">{{ item }}</li>
+                </ul>
             </div>
 
             <ul class="bullets" :class="{ 'show': showReadMore }">
@@ -73,6 +73,11 @@
 </template>
 
 <style scoped>
+@media only screen and (max-width: 800px) {
+    .image-container img {
+        padding-left: 20px;
+    }
+}
 
     .bullets {
         max-height: 0;
@@ -117,6 +122,7 @@
     }
     .tech {
         display: flex;
+        flex-wrap: wrap;
         /* background-color: antiquewhite; */
         /* margin-bottom: 0; */
 
@@ -137,7 +143,7 @@
         -webkit-box-shadow: 3px 3px 7px 1px rgba(28,110,164,0.10); 
         box-shadow: 3px 3px 7px 1px rgba(28,110,164,0.10);
         width: auto;
-        margin-bottom: 0;
+        margin-bottom: 5px;
 
     }
 

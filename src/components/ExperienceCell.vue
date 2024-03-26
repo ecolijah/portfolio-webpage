@@ -23,6 +23,23 @@ defineProps({
 </template>
 
 <style scoped>
+
+@media only screen and (max-width: 800px) {
+    .title {
+        max-width: 90%;
+    }
+
+    h2 {
+        padding-left: 10px;
+    }
+    .title p {
+        padding-left: 10px;
+    }
+
+    li {
+        padding-left: 10px;
+    }
+}
     .project-cell {
         display: flex;
         flex-direction: column;
@@ -38,10 +55,12 @@ defineProps({
         justify-content: space-between;
         width: inherit;
         margin-bottom: 10px;
+        text-align: left;
     }
 
     .title p{
         color: var(--text-color);
+
     }
 
     p {
@@ -57,6 +76,8 @@ defineProps({
         font-weight: 700;
         margin: 0;
         text-shadow: var(--text-shadow);
+        text-align: left;
+
     }
 
     ul {

@@ -28,6 +28,7 @@
 </template>
 
 <style scoped>
+
     .links {
         display: flex;
         flex-direction: row;

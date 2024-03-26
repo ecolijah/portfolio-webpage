@@ -28,6 +28,11 @@ const bArr3 = ["developed ”beck”, an ai-powered personal assistant with conf
 
 </template>
 <style scoped>
+@media only screen and (max-width: 800px) {
+    .title h1 {
+        margin-right: 20px;
+    }
+}
     .projects {
         display: flex;
         flex-direction: column;

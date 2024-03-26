@@ -52,6 +52,19 @@
   </script>
   
   <style scoped>
+  @media only screen and (max-width: 800px) {
+    .title h1 {
+        margin-left: 20px;
+    }
+
+    .group {
+      padding: 10px;
+    }
+
+    .submit {
+      padding-left: 10px;
+    }
+}
 
   input  {
     margin-bottom: 0;
@@ -86,17 +99,19 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      width: 90%;
 
       /* background-color: yellowgreen; */
     }
 
     textarea {
-      width: 600px;
+      width: 100%;
       height: 150px;
     }
 
     h1 {
         font-size: var(--large-text);
+        color: var(--title-color);
         /* background-color: aliceblue; */
         margin: 0;
         font-weight: 700;
@@ -108,6 +123,8 @@
 
       font-size: var(--small-text);
         /* background-color: aliceblue; */
+        color: var(--title-color);
+
         /* margin: 0; */
         font-weight: 700;
         margin-bottom: 0;

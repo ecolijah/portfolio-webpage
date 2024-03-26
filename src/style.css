@@ -31,14 +31,7 @@
   --small-text-shadow: 1px 1px 3px rgba(28,110,164,0.39);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   font-family: 'Space Grotesk', sans-serif;
@@ -63,15 +56,56 @@ h1 {
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
+@media only screen and (max-width: 800px) {
+  .navbar {
+    max-width: 90%;
+  }
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --large-text: calc(5.5rem * var(--multiplier));
   }
-  a:hover {
-    color: #747bff;
+
+  #experience.experience.section {
+    
   }
-  button {
-    background-color: #f9f9f9;
+
+  .project-cell {
+    /* padding: 10px; */
+    /* padding-right: 20px; */
+    /* background-color: red; */
+
   }
+
+  .body {
+    overflow: hidden;
+  }
+
+  .forms {
+    /* padding: 20px; */
+  }
+
+
+  #home.landing.section {
+    /* background-color: red; */
+    flex-direction: column-reverse;
+  }
+
+  .landing-image {
+    /* background-color: blue; */
+    height: 350px;
+    justify-content: flex-start;
+    /* align-items: flex-end; */
+    flex-basis: 100%;
+    left: 0;
+    margin-top: 20%;
+    padding: 10px;
+  }
+  .landing-text {
+    padding: 15px;
+  }
+  /* .landing-image.img {
+    max-height: 60%;
+    max-width: 60%;
+  } */
 }
+
+

@@ -61,6 +61,7 @@ onMounted(() => {
       <Studio id="studio" class="section"/>
       <Contact id="contact" class="section"/>
       <a href="#home" class="back-to-top" :class="{ 'show': scrolledPastLandingPage }">back to top</a>
+      
     </div>
   </div>
 
@@ -69,6 +70,9 @@ onMounted(() => {
 </template>
 
 <style scoped>  
+
+/* If the screen size is 600px wide or less, hide the element */
+
 
 .back-to-top {
     font-size: var(--smaller-text);

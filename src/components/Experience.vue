@@ -25,6 +25,11 @@ const arr4 = ["studied design and history of architecture."]
 
 </template>
 <style scoped>
+@media only screen and (max-width: 800px) {
+    .title h1 {
+        margin-left: 20px;
+    }
+}
     .experience {
         display: flex;
         flex-direction: column;
