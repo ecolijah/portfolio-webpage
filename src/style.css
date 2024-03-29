@@ -64,19 +64,11 @@ h1 {
     --large-text: calc(5.5rem * var(--multiplier));
   }
 
-  #experience.experience.section {
-    
-  }
 
-  .project-cell {
-    /* padding: 10px; */
-    /* padding-right: 20px; */
-    /* background-color: red; */
-
-  }
 
   .body {
     overflow: hidden;
+    /* background-color: white; */
   }
 
   .forms {

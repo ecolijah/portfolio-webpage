@@ -28,9 +28,19 @@ const bArr3 = ["developed ”beck”, an ai-powered personal assistant with conf
 
 </template>
 <style scoped>
+
+@media only screen and (min-width: 801px) {
+    .title {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 40px;
+    }
+
+}
 @media only screen and (max-width: 800px) {
-    .title h1 {
-        margin-right: 20px;
+
+    .title {
+        justify-content: center;
     }
 }
     .projects {
@@ -39,11 +49,7 @@ const bArr3 = ["developed ”beck”, an ai-powered personal assistant with conf
         width: 100%;
         /* background-color: burlywood; */
     }
-    .title {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 40px;
-    }
+
 
     .cells {
         display: flex;

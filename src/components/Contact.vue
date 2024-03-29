@@ -53,40 +53,51 @@
   </script>
   
   <style scoped>
+
+  @media only screen and (min-width: 801px) {
+      .title {
+          display: flex;
+          justify-content: flex-start;
+      }
+  }
+  
   @media only screen and (max-width: 800px) {
-    .title h1 {
-        margin-left: 20px;
-    }
+      .title {
+          justify-content: center;
+          /* background-color: aliceblue; */
+      }
+  
+      .group,
+      .submit {
+          padding: 10px;
+      }
 
-    .group {
-      padding: 10px;
-    }
-
-    .submit {
-      padding-left: 10px;
-    }
-}
-
-  input  {
-    margin-bottom: 0;
-    width: 100%;
+      h2 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  }
+  
+  input {
+      margin-bottom: 0;
+      width: 100%;
   }
 
-    .contact {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        align-items: flex-start;
-        /* background-color: blueviolet; */
-    }
-    .title {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .forms {
-      /* padding-left: 5%; */
+  .title {
+    display: flex;
+    width: 100%;
+  }
+  
+  .contact {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      align-items: flex-start;
+      /* background-color: blueviolet; */
+  }
+  
+  .forms {
       margin-top: 50px;
       display: flex;
       flex-direction: column;
@@ -95,55 +106,48 @@
       /* background-color: aliceblue; */
       width: 100%;
       flex-basis: 60%;
-    }
-    .group {
+  }
+  
+  .group {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 90%;
-
       /* background-color: yellowgreen; */
-    }
-
-    textarea {
+  }
+  
+  textarea {
       width: 100%;
       height: 150px;
-    }
-
-    h1 {
-        font-size: var(--large-text);
-        color: var(--title-color);
-        /* background-color: aliceblue; */
-        margin: 0;
-        font-weight: 700;
-        text-shadow: var(--text-shadow);
-
-    }
-
-    h2 {
-
+  }
+  
+  h1 {
+      font-size: var(--large-text);
+      color: var(--title-color);
+      /* background-color: aliceblue; */
+      margin: 0;
+      font-weight: 700;
+      text-shadow: var(--text-shadow);
+  }
+  
+  h2 {
       font-size: var(--small-text);
-        /* background-color: aliceblue; */
-        color: var(--title-color);
-
-        /* margin: 0; */
-        font-weight: 700;
-        margin-bottom: 0;
-        text-shadow: var(--small-text-shadow);
-
-    }
-    a {
-      /* background-color: black; */
-      /* margin: 5px; */
+      /* background-color: aliceblue; */
+      color: var(--title-color);
+      /* margin: 0; */
+      font-weight: 700;
+      margin-bottom: 0;
+      text-shadow: var(--small-text-shadow);
+  }
+  
+  a {
       width: 80px;
       text-decoration: none;
-
-      
       /* color: blue; */
       /* height: 40px; */
-    }
-
-    .submit h3 {
+  }
+  
+  .submit h3 {
       font-size: var(--small-text);
       font-weight: 400;
       color: white;
@@ -152,20 +156,18 @@
       padding: 5px;
       border-radius: 3px;
       text-decoration: none;
-      -webkit-box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20); 
-        box-shadow: 5px 5px 15px 3px rgba(28,110,164,0.20);
-    }
-
-    .forms p {
-      /* margin: 5px; */
+      -webkit-box-shadow: 5px 5px 15px 3px rgba(28, 110, 164, 0.20);
+      box-shadow: 5px 5px 15px 3px rgba(28, 110, 164, 0.20);
+  }
+  
+  .forms p {
       font-size: var(--small-text);
       color: var(--text-color);
       font-weight: 400;
       margin: 0;
       /* background-color: red; */
-    }
-
-
+  }
+  
   /* Your component styles */
   </style>
   

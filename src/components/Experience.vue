@@ -25,9 +25,18 @@ const arr4 = ["studied design and history of architecture."]
 
 </template>
 <style scoped>
+@media only screen and (min-width: 801px) {
+    .title {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+}
 @media only screen and (max-width: 800px) {
-    .title h1 {
-        margin-left: 20px;
+
+    .title {
+        justify-content: center;
     }
 }
     .experience {
@@ -36,10 +45,7 @@ const arr4 = ["studied design and history of architecture."]
         width: 100%;
         /* background-color: bisque; */
     }
-    .title {
-        display: flex;
-        justify-content: flex-start;
-    }
+
 
     .cells {
         display: flex;

@@ -17,9 +17,15 @@
 
 </template>
 <style scoped>
+@media only screen and (min-width:801px) {
+    .title {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 @media only screen and (max-width: 800px) {
     .title h1 {
-        margin-right: 20px;
+        justify-content: center;
     }
 
     p {
@@ -34,10 +40,7 @@
         height: 100vh;
         gap: 30%;
     }
-    .title {
-        display: flex;
-        justify-content: flex-end;
-    }
+
 
     .cells {
         display: flex;
