@@ -1,4 +1,5 @@
 <script setup>
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 </script>
 
@@ -14,8 +15,16 @@
 
             <div class="links">
                 <!-- <a href="" target="_blank">instagram</a> -->
-                <a href="https://github.com/ecolijah" target="_blank"><img src="../assets/github-mark.png"/></a>
-                <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/" target="_blank"><img src="../assets/icons8-linkedin-50.png" /></a>
+                <a href="https://github.com/ecolijah" target="_blank">
+                    <img v-if="!isDarkMode" src="../assets/github-mark.png"/>
+                    <img v-if="isDarkMode" src="../assets/icons8-github-30.png"/>
+
+                </a>
+                <a href="https://www.linkedin.com/in/elijah-lopez-65b809238/" target="_blank">
+                    <img  v-if="!isDarkMode" src="../assets/icons8-linkedin-50.png" />
+                    <img  v-if="isDarkMode" src="../assets/icons8-linkedin-50-white.png" />
+
+                </a>
             </div>
         </div>
 

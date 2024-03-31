@@ -112,29 +112,22 @@ onMounted(() => {
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* flex-basis: 100%; */
     justify-content: space-between;
     text-shadow: var(--small-text-shadow);
     margin-top: 15px;
-    /* background-color: aliceblue; */
     
   }
   .navbar a {
     color: var(--title-color);
     text-decoration: none;
-
-
   }
 
   .outer-container {
     min-width: 100vw;
-    background-color: rgb(255, 253, 250);
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* align-items: start; */
-    /* transform: scale(0.8); */
-    /* transform-origin: top center; */
 
   }
 
@@ -145,9 +138,5 @@ onMounted(() => {
     flex-direction: column;
     align-items: center;
     flex-basis: 864px;
-    /* width: inherit; */
-    /* background-color: rgb(255, 255, 255); */
-
-
   }
 </style>

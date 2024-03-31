@@ -36,6 +36,7 @@
 
     }
     
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 </script>
 <template>
@@ -61,7 +62,11 @@
                 <li v-for="item in bullets">{{ item }}</li>
             </ul>
             <div class="links">
-                <a :href=url target="_blank"><img src="../assets/github-mark.png"/></a>
+                <a href="https://github.com/ecolijah" target="_blank">
+                    <img v-if="!isDarkMode" src="../assets/github-mark.png"/>
+                    <img v-if="isDarkMode" src="../assets/icons8-github-30.png"/>
+
+                </a>
                 <button @click="toggleReadMore">
                     <p v-show="!showReadMore">read more ↓</p>
                     <p v-show="showReadMore">read less ↑</p>
@@ -102,7 +107,7 @@
     }
 
     .links button {
-        background-color: rgb(41, 41, 41);
+        background-color: var(--tech-box);
         height: 32px;
         margin-bottom: 5px;
         border-radius: 3px;
@@ -135,7 +140,7 @@
         margin-bottom: 0;
     }
     .tech li {
-        background-color: #d9d9d9;
+        background-color: var(--tech-box);
         margin-right: 10px;
         padding-right: 5px;
         padding-left: 5px;
