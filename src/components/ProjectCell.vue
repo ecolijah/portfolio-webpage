@@ -97,7 +97,7 @@
     
     .links p {
         margin: 0;
-        color: white;
+        color: var(--tech-box-text);
         font-size: var(--small-text);
         font-weight: 400;
         padding-left: 3px;
@@ -141,6 +141,8 @@
     }
     .tech li {
         background-color: var(--tech-box);
+        color: var(--tech-box-text);
+
         margin-right: 10px;
         padding-right: 5px;
         padding-left: 5px;

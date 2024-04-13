@@ -15,7 +15,7 @@ const arr4 = ["studied design and history of architecture."]
             <h1>experience</h1>
         </div>
         <div class="cells">
-            <!-- <ExperienceCell title="aws clf-002 certification" position="certified cloud practicioner" date="march 2024" :bullets="arr1" /> -->
+            <ExperienceCell title="aws clf-002 certification" position="certified cloud practicioner" date="april 2024" :bullets="arr1" />
             <ExperienceCell title="engineering consultation firm (confidential)" position="gis engineer" date="december 2022 - october 2023" :bullets="arr2" />
             <ExperienceCell title="bachelors of computer science" position="university of houston" date="december 2023" :bullets="arr3" />
             <ExperienceCell title="minor in architecture" position="university of houston" date="december 2023" :bullets="arr4" />
