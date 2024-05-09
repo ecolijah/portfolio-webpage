@@ -10,7 +10,7 @@
     })
 
     console.log(props)
-
+    
     var showVercel =  ref(false);
     var showKrates =  ref(false);
     var showBeck =  ref(false);
@@ -62,7 +62,7 @@
                 <li v-for="item in bullets">{{ item }}</li>
             </ul>
             <div class="links">
-                <a href="https://github.com/ecolijah" target="_blank">
+                <a :href=url target="_blank">
                     <img v-if="!isDarkMode" src="../assets/github-mark.png"/>
                     <img v-if="isDarkMode" src="../assets/icons8-github-30.png"/>
 
