@@ -6,7 +6,9 @@
         imgpath: String,
         tech: Array,
         bullets: Array,
-        url: String
+        url: String,
+        link: String,
+        live: Boolean
     })
 
     console.log(props)
@@ -14,6 +16,10 @@
     var showVercel =  ref(false);
     var showKrates =  ref(false);
     var showBeck =  ref(false);
+    var showBaby =  ref(false);
+
+    var liveLink =  ref(props.live)
+
 
         watchEffect(() => {
         switch (props.imgpath) {
@@ -25,6 +31,9 @@
                 break;
             case "3":
                 showBeck.value = true;
+                break;
+            case "4":
+                showBaby.value = true;
                 break;
             }
         });
@@ -46,6 +55,8 @@
             <img v-show="showVercel" src="../assets/project-logos/1.png" alt="logo" />
             <img v-show="showKrates" src="../assets/project-logos/2.png" alt="logo" />
             <img v-show="showBeck" src="../assets/project-logos/3.png" alt="logo" />
+            <img v-show="showBaby" src="../assets/project-logos/4.png" alt="logo" />
+
 
 
         </div>
@@ -71,6 +82,7 @@
                     <p v-show="!showReadMore">read more ↓</p>
                     <p v-show="showReadMore">read less ↑</p>
                 </button>
+                <a target="_blank" v-if="liveLink" :href=link style="padding-left: 10px;">Site is Live!</a>
             </div>
         </div>
     </div>
