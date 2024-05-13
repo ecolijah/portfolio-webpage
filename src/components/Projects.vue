@@ -12,7 +12,7 @@ const tArr4 = ["vue.js", "node.js"]
 const bArr1 = ["studied and implemented a simplified version of vercel’s deployment service, as well as a case study of the system architecture.","gained experience working with aws in a realistic environment."]
 const bArr2 = ["developed ”krates”, an ios app designed to facilitate the discovery of new music whilst promoting the appreciation of albums as complete bodies of work.", "like ’letterboxd’, but replace movies with albums. (users create lists of albums, by any criteria.)"]
 const bArr3 = ["developed ”beck”, an ai-powered personal assistant with configurable behavior, in order to cater to diverse user preferences.", "enabled long-term memory functionality through the integration of vector database/embeddings.", "devised a model that fuses recent dialogues with relevant past conversations, enhancing the ai’s contextual comprehension."]
-const bArr4 = ["when practicing my typing on monkeytype, i often found myself needing to improve my fundamnetals.", "So i developed babytpe, a lightweight webapp focused on improving single character accuracy."]
+const bArr4 = ["when practicing my typing on monkeytype, i often found myself needing to improve my fundamentals.", "So i developed babytpe, a lightweight webapp focused on improving single character accuracy."]
 
 </script>
 <template>
