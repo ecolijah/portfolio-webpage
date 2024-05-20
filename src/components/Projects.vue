@@ -21,7 +21,7 @@ const bArr4 = ["when practicing my typing on monkeytype, i often found myself ne
             <h1>projects</h1>
         </div>
         <div class="cells">
-            <ProjectCell title="babytype" blurb="monkeytype for single charcters." :tech="tArr4" :bullets="bArr4" url="https://github.com/ecolijah/babytype" imgpath="4" link="https://babytyp3.vercel.app/" live="True"/>
+            <ProjectCell title="babytype" blurb="monkeytype for single charcters." :tech="tArr4" :bullets="bArr4" url="https://github.com/ecolijah/babytype" imgpath="4" link="https://babytype.xyz/" live="True"/>
             <ProjectCell title="vercel-esque service" blurb="simplified clone of vercel deployment service." :tech="tArr1" :bullets="bArr1" url="https://github.com/ecolijah/vercel-clone" imgpath="1" />
             <ProjectCell title="krates - ios app" blurb="music organization and discovery, with an emphasis on albums as a complete body of work." :tech="tArr2" :bullets="bArr2" url = "https://github.com/ecolijah/Krates" imgpath="2"/>
             <ProjectCell title="beck" blurb="ai-powered personal assistant." :tech="tArr3" :bullets="bArr3" url = "https://github.com/ecolijah/Beck" imgpath="3"/>
